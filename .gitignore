@@ -1,0 +1,106 @@
+# Python
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.Python
+*.egg-info/
+dist/
+build/
+*.egg
+
+# Environment variables
+.env
+.env.local
+.env.*.local
+server/.env
+
+# Node.js
+node_modules/
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+.pnpm-debug.log*
+
+# Expo
+.expo/
+.expo-shared/
+dist/
+
+# Android
+*.apk
+*.aab
+*.ap_
+*.dex
+*.class
+client/android/app/build/
+client/android/.gradle/
+client/android/local.properties
+client/android/app/debug.keystore
+client/android/app/release.keystore
+client/credentials/
+
+# iOS
+*.ipa
+*.dSYM.zip
+*.dSYM
+client/ios/build/
+client/ios/Pods/
+client/ios/*.xcworkspace
+client/ios/*.xcuserdata
+
+# IDE
+.idea/
+.vscode/
+*.swp
+*.swo
+*~
+.DS_Store
+
+# Logs
+*.log
+logs/
+*.log.*
+
+# Temporary files
+tmp/
+server/tmp/
+*.tmp
+*.temp
+
+# Model files (large binary files)
+server/saved_models/
+
+# Test outputs
+server/test/*.png
+server/test/*.jpg
+server/test/*.jpeg
+
+# Output files
+output/
+*.exe
+
+# Third-party tools
+frp_0.64.0_windows_amd64/
+
+# Database
+*.db
+*.sqlite
+*.sqlite3
+
+# Coverage reports
+htmlcov/
+.coverage
+.coverage.*
+coverage.xml
+*.cover
+
+# Jupyter Notebook
+.ipynb_checkpoints
+
+# pyenv
+.python-version
+
+# OS
+Thumbs.db
+.DS_Store

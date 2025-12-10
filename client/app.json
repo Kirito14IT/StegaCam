@@ -1,0 +1,58 @@
+{
+  "expo": {
+    "name": "StegaCam",
+    "slug": "stegacam",
+    "version": "1.0.0",
+    "orientation": "portrait",
+    "jsEngine": "hermes",
+    "userInterfaceStyle": "automatic",
+    "icon": "./assets/icon.png",
+    "assetBundlePatterns": [
+      "**/*"
+    ],
+    "ios": {
+      "bundleIdentifier": "com.stegacam.client",
+      "supportsTablet": false,
+      "usesNonExemptEncryption": false,
+      "infoPlist": {
+        "NSCameraUsageDescription": "应用需要访问相机以进行拍照和隐写编码。",
+        "NSPhotoLibraryUsageDescription": "应用需要访问相册以选择图片进行解码。",
+        "NSPhotoLibraryAddUsageDescription": "应用需要保存编码后的图片到您的相册。",
+        "ITSAppUsesNonExemptEncryption": false
+      }
+    },
+    "android": {
+      "permissions": [
+        "CAMERA",
+        "READ_EXTERNAL_STORAGE",
+        "WRITE_EXTERNAL_STORAGE",
+        "READ_MEDIA_IMAGES",
+        "READ_MEDIA_VIDEO"
+      ],
+      "package": "com.stegacam.client",
+      "minSdkVersion": 24,
+      "ndkVersion": "26.3.11579264",
+      "adaptiveIcon": {
+        "foregroundImage": "./assets/icon.png",
+        "backgroundColor": "#1E88E5"
+      }
+    },
+    "plugins": [
+      "expo-camera",
+      [
+        "expo-media-library",
+        {
+          "photosPermission": "应用需要访问您的照片以选择图片进行解码。",
+          "savePhotosPermission": "应用需要保存编码后的图片到您的相册。",
+          "isAccessMediaLocationEnabled": true
+        }
+      ],
+      "expo-image-picker"
+    ],
+    "extra": {
+      "eas": {
+        "projectId": "15917a68-62df-4e8d-9530-825aa0894a4e"
+      }
+    }
+  }
+}
