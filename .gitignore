@@ -104,3 +104,8 @@ coverage.xml
 # OS
 Thumbs.db
 .DS_Store
+
+# Office temporary files
+~$*
+*.tmp
+*.temp
